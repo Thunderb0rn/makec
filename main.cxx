@@ -55,6 +55,8 @@ int main(int argc, char* argv[]) {
   std::cout << (LANGUAGE==C ? "C Version:\t" : LANGUAGE==CXX ? "C++ Version:\t" : "") << (LANGUAGE==C ? std::to_string(c_version) : LANGUAGE==CXX ? std::to_string(cxx_version) : "") << std::endl;
   std::cout << "Project Name:\t" << project_name << std::endl;
 #endif // DEBUG
+  if (LANGUAGE==nLang) {return -1;}
+  createProject(project_name, LANGUAGE);
 
   return 0;
 }

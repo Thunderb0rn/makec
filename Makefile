@@ -1,5 +1,5 @@
 build:
-	g++ main.cxx file_command.cxx -o makec
+	g++ ../main.cxx ../file_command.cxx -o makec -lstdc++fs
 
 run:
 	./makec
