@@ -4,5 +4,9 @@ build:
 run:
 	./makec
 
-clear:
+clean:
 	rm -r *.o
+
+clear:
+	rm -r makec
+
